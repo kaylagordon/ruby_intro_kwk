@@ -2,31 +2,74 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Bracket vs. Dot Notation</title>
   </head>
   <body>
-    <h1>Bracket vs. Dot Notation</h1>
-    <h2>Learning Goals</h2>
-    <ul>
-      <li>One</li>
-      <li>Two</li>
-    </ul>
-    <h2>Vocabulary</h2>
-    <ul>
-      <li>One</li>
-      <li>Two</li>
-    </ul>
-    <h2>Topic 1</h2>
-    <!-- https://codepen.io/kaylaewood/pen/YzqrdGM?editors=1111 -->
-  </body>
+    <h1>JavaScript: Bracket vs. Dot Notation</h1>
+    <header>
+      <section class="info-section">
+        <h2>Learning Goals</h2>
+        <ul>
+          <li>One</li>
+          <li>Two</li>
+        </ul>
+      </section>
+      <section class="info-section">
+        <h2>Vocabulary</h2>
+        <ul>
+          <li>Object</li>
+          <li>Key-Value Pair</li>
+        </ul>
+      </section>
+    </header>
+    <section class='lesson'>
+      <h2>Topic 1</h2>
+      <table>
+        <tr>
+          <th>Dot Notation</th>
+          <th>Bracket Notation</th>
+        </tr>
+        <tr>
+          <td>someObject.someKey</td>
+          <td>someObject["someKey"]</td>
+        </tr>
+        <tr>
+          <td>not possible</td>
+          <td>someObject[someVariable]</td>
+        </tr>
+      </table>
+    </section>
+    <section class='try-it'>
+      <nav class='section-heading'>
+        <h2>Try It #1</h2>
+        <button type="button" name="button" id="try-it1-button"></button>
+      </nav>
+      <article class='content hidden'>
+        <p>TEST</p>
+      </article>
+    </section>
+    <section class='checkpoint'>
+      <nav class='section-heading'>
+        <h2>Pause & Reflect #1</h2>
+        <button type="button" name="button" id="try-it1-button"></button>
+      </nav>
+      <article class='content hidden'>
+        <ol>
+          <li>What is the difference between <span class='monospace'>pet[name]</span> and <span class='monospace'>pet["name"]</span>?</li>
+          <li>Which expression above is equivalent to <span class='monospace'>pet.name</span>?</li>
+        </ol>
+      </article>
+    </section>
+    <p id="cited">Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+</body>
 </html>
 
 <!--
 equivalence activity: https://repl.it/@kaylaewood/bracketVsDotPractice1#main.js
 teach
-leveled practice
+leveled practice: from accessing to Object.keys()
 challenge in breakouts: https://codepen.io/kaylaewood/pen/wvGrQxV?editors=1010
 closing
 -->

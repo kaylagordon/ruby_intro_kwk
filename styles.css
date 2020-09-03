@@ -1,3 +1,72 @@
 * {
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.monospace {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #CCCCCC;
+}
+
+header {
+  display: flex;
+}
+
+section {
+  margin: 15px;
+  background-color: #E5E5E5;
+  text-align: center;
+  border: 5px solid;
+}
+
+section > ul > li,
+section > ol > li {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.info-section {
+  border-color: #F7B733;
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.lesson {
+  background-color: white;
+  border: none;
+}
+
+.try-it {
+  border-color: #FF4A1B;
+}
+
+.checkpoint {
+  border-color: #5EC6B7;
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+
+.section-heading > button {
+  width: 30px;
+  border: none;
+  background-color: #E5E5E5;
+  background-image: url("resources/expand.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hidden {
+  display: none;
+}
+
+#try-it1-button {
+
+}
+
+#cited {
+  font-size: 12px;
 }
