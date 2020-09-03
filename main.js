@@ -1,12 +1,12 @@
-var page = document.querySelector('body');
-
-page.addEventListener('click', function() {
-  if (event.target.closest('nav') && event.target.closest('nav').classList.contains('section-heading')) {
-    event.target.closest('section').children[1].classList.toggle('hidden');
-    if (event.target.closest('nav').children[1].style.backgroundImage === 'url("resources/shrink.png")') {
-      event.target.closest('nav').children[1].style.backgroundImage = 'url("resources/expand.png")';
+document.querySelector('body').addEventListener('click', function() {
+  let navBar = event.target.closest('nav');
+  let collapseButton = event.target.closest('section').children[1];
+  if (navBar && navBar.classList.contains('section-heading')) {
+    collapseButton.classList.toggle('hidden');
+    if (navBar.children[1].style.backgroundImage === 'url("resources/shrink.png")') {
+      navBar.children[1].style.backgroundImage = 'url("resources/expand.png")';
     } else {
-      event.target.closest('nav').children[1].style.backgroundImage = 'url("resources/shrink.png")';
+      navBar.children[1].style.backgroundImage = 'url("resources/shrink.png")';
     }
   }
 });
