@@ -1,6 +1,5 @@
 * {
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
 }
 
 body {
@@ -13,6 +12,11 @@ body {
   background-color: #CCCCCC;
 }
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 header {
   display: flex;
 }
@@ -20,20 +24,23 @@ header {
 section {
   margin: 15px;
   background-color: #E5E5E5;
-  text-align: center;
   border: 5px solid;
 }
 
-section > ul > li,
-section > ol > li {
+ul > li,
+ol > li {
   margin-bottom: 15px;
   text-align: left;
 }
 
-.info-section {
+.framing {
   border-color: #F7B733;
   width: 50%;
   margin-bottom: 0;
+}
+
+h2 {
+  text-align: center;
 }
 
 .lesson {
@@ -48,6 +55,7 @@ section > ol > li {
 .checkpoint {
   border-color: #5EC6B7;
 }
+
 .section-heading {
   display: flex;
   justify-content: space-between;
