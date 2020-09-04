@@ -3,7 +3,7 @@
 }
 
 body {
-  width: 80%;
+  width: 52%;
   margin: auto;
 }
 
@@ -28,7 +28,8 @@ section {
 }
 
 ul > li,
-ol > li {
+ol > li,
+.goals {
   margin-bottom: 15px;
   text-align: left;
 }
@@ -39,7 +40,7 @@ ol > li {
   margin-bottom: 0;
 }
 
-h2 {
+h1, h2, h3 {
   text-align: center;
 }
 
