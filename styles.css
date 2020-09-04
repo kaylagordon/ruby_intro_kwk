@@ -28,6 +28,10 @@ section {
   border: 5px solid;
 }
 
+button:focus {
+  outline:0;
+}
+
 ul > li,
 ol > li,
 .goals {
