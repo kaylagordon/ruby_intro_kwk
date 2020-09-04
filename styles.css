@@ -8,6 +8,14 @@ body {
   margin: auto;
 }
 
+code {
+  background-color: #CCCCCC;
+  border: 2px solid #999;
+  display: block;
+  padding: 20px;
+  font-family: 'Source Code Pro', monospace;
+}
+
 .monospace {
   font-family: 'Source Code Pro', monospace;
   background-color: #CCCCCC;
@@ -25,7 +33,8 @@ header {
 section {
   margin: 15px;
   background-color: #E5E5E5;
-  border: 5px solid;
+  border: 5px solid #E5E5E5;
+  /* border: none; */
 }
 
 button:focus {
@@ -40,7 +49,7 @@ ol > li,
 }
 
 .framing {
-  border-color: #F7B733;
+  /* border-color: #F7B733; */
   width: 50%;
   margin-bottom: 0;
 }
@@ -51,11 +60,37 @@ ol > li,
 }
 
 .try-it {
-  border-color: #FF4A1B;
+  /* border-color: #FF4A1B; */
+}
+
+.key-point {
+  background-color: white;
+  border-color: #F7B733;
+}
+
+.key-point > p {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.key-point > p > strong {
+ font-size: 18px;
+}
+
+/* .try-it > nav > h3 {
+  color: #FF4A1B;
+} */
+
+.content {
+  padding-bottom: 10px;
 }
 
 .checkpoint {
-  border-color: #5EC6B7;
+  /* border-color: #5EC6B7; */
+}
+
+.challenge-problems {
+  /* border-color: #633295; */
 }
 
 .section-heading {
@@ -78,10 +113,6 @@ ol > li,
   display: none;
 }
 
-#try-it1-button {
-
-}
-
 #cited {
   font-size: 12px;
 }
@@ -92,7 +123,7 @@ ol > li,
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   body {
     width: 95%;
   }
