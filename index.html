@@ -83,10 +83,12 @@
          <span class='indent1'>}</span><br />
        }
       </code>
-      <p class='lesson-text'>If we wanted to access this user’s zip code using dot notation, we could write:<br /><code>user.contactInfo.address.zip</code></p>
+      <p class='lesson-text'>If we wanted to access this user’s zip code using <strong>dot notation</strong>, we could write:<br /><code>user.contactInfo.address.zip</code></p>
 
-      <p class='lesson-text'>In order to access their zip using bracket notation, we would write:<br /><code>user[‘contactInfo’][‘address’][‘zip’]</code></p>
-      <p class='lesson-text'>You can also mix and match! We could write something like this and it would work.<br /><code>user.contactInfo[‘address’].zip</code><br /></p>
+      <p class='lesson-text'>In order to access their zip using <strong>bracket notation</strong>, we would write:<br /><code>user[‘contactInfo’][‘address’][‘zip’]</code></p>
+      <p class='lesson-text'>You can also mix and match! We could write something like this and it would work.<br /><code>user.contactInfo[‘address’].zip</code></p>
+      <p class='lesson-text'>Notice how each block is formatted:</p>
+      <p id='breakdown-unit'><span class='breakdown'>user</span><span class='breakdown'>.contactInfo</span><span class='breakdown'>[‘address’]</span><span class='breakdown'>.zip</span></p>
     </section>
     <section class='try-it'>
       <nav class='section-heading'>
@@ -97,9 +99,9 @@
         <ol>
           <li>Independently, complete the exercise found on <a href='https://repl.it/@kaylaewood/bracketVsDotTryIt2#main.js' target="_blank">this repl</a>.</li>
           <li>When you finish, answer this question in the zoom chat:</li>
-          <div class='question'>
+          <p class='question'>
              In your opinion, which notation is easier to read and write?
-          </div>
+          </p>
         </ol>
       </article>
     </section>
@@ -108,7 +110,26 @@
     </section>
     <section class='lesson'>
       <h2>Bracket Notation & Variables</h2>
-      <p class='lesson-text'>Something</p>
+      <p class='lesson-text'>Dot notation only works if you have access to the exact property name. Dot notation interprets the expression literally. Meaning, it will look for the actual property that is passed in. Let’s take, for example, <a href="https://repl.it/@kaylaewood/bracketVsDotlesson1">this code block</a>:</p>
+      <code>
+        var phrases = {<br />
+          <span class='indent1'>greeting: 'hello',</span><br />
+          <span class='indent1'>departing: 'goodbye'</span><br />
+       } <br /> <br />
+       var lookupField = 'greeting';
+      </code>
+      <p class='lesson-text'>If we ran the  command below, we would get undefined. This is because the JavaScript interpreter is looking for a property that is literally called “lookupField” and it does not exist:</p>
+      <code>console.log(phrases.lookupField);<br />//output: undefined</code>
+      <p class='lesson-text'>The same would happen in this case:</p>
+      <code>console.log(phrases['lookupField']);<br />//output: undefined</code>
+      <p class='lesson-text'>We can use bracket notation in our favor, by passing in the variable, like the example below. In this case, the interpreter will register lookupField as a variable and then pass in it’s value of ‘greeting’ to get the output of ‘hello’:</p>
+      <code>console.log(phrases[lookupField]);<br />//output: ‘hello’</code>
+      <p class='lesson-text'>If we reassigned the value of lookupField and then ran the same command as above, we’d get a new output:</p>
+      <code>lookupField = 'leaving';<br /><br />console.log(phrases[lookupField]);<br />//output: 'goodbye'</code>
+      <p class='lesson-text'>Bracket notation gives us the ability to use variables to look up values in an object. This is especially helpful with the value of the variable changes.</p>
+    </section>
+    <section class='key-point'>
+      <p><strong>Key Point #3: </strong>Whenever we are accessing an object with variables, we must use bracket notation.</p>
     </section>
     <section class='try-it'>
       <nav class='section-heading'>
@@ -117,21 +138,30 @@
       </nav>
       <article class='content hidden'>
         <ol>
-          <li>Independently, complete the exercise found on <a href='https://repl.it/@kaylaewood/bracketVsDotTryIt3#main.js' target="_blank">this repl</a>.</li>
-          <li>When you finish, answer this question in the zoom chat: ***</li>
+          <li>In a breakout room, discuss the questions found on <a href='https://repl.it/@kaylaewood/bracketVsDotTryIt3#main.js' target="_blank">this repl</a>.</li>
+          <li>You will have 5 minutes in these breakout rooms. Be prepared to discuss as a whole group after. Write down any questions that pop up along the way so we can disucss as a group!</li>
         </ol>
       </article>
     </section>
-    <section class='key-point'>
-      <p><strong>Key Point #3: </strong>Whenever we are accessing an object with variables, we must use bracket notation.</p>
-    </section>
     <section class='lesson'>
       <h2>Applying What We've Learned</h2>
-      <p class='lesson-text'>Something</p>
+      <p class='lesson-text'>Now that we've covered the fundamentals, let's look at how we can apply bracket and dot notation in live code.</p>
+    </section>
+    <section class='try-it'>
+      <nav class='section-heading'>
+        <h3>Try It #4</h3>
+        <button type="button" class="collapse-button"></button>
+      </nav>
+      <article class='content hidden'>
+        <ol>
+          <li>In a breakout room, discuss the questions found on <a href='https://repl.it/@kaylaewood/bracketVsDotTryIt4#main.js' target="_blank">this repl</a>.</li>
+          <li>You will have 5 minutes in these breakout rooms. Be prepared to discuss as a whole group after. Write down any questions that pop up along the way so we can disucss as a group!</li>
+        </ol>
+      </article>
     </section>
     <section class='challenge-problems'>
       <nav class='section-heading'>
-        <h3>Challenge Problems</h3>
+        <h3>Challenge Problems ("Homework")</h3>
         <button type="button" class="collapse-button"></button>
       </nav>
       <article class='content hidden'>
@@ -145,11 +175,3 @@
 </body>
 <script type="text/javascript" src="main.js"></script>
 </html>
-
-<!--
-equivalence activity: https://repl.it/@kaylaewood/bracketVsDotPractice1#main.js
-teach
-leveled practice: from accessing to Object.keys()
-challenge in breakouts: https://codepen.io/kaylaewood/pen/wvGrQxV?editors=1010
-closing
--->

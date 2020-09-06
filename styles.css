@@ -128,6 +128,22 @@ ol > li,
   font-family: 'Source Code Pro', monospace;
 }
 
+.challenge-problems {
+  border-color: #5EC6B7;
+}
+
+#breakdown-unit {
+  margin-bottom: 45px;
+}
+
+#breakdown-unit > span {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 18px;
+  border: 6px solid gray;
+  margin: 5px;
+  padding: 5px;
+}
+
 #cited {
   font-size: 10px;
   text-align: right;
