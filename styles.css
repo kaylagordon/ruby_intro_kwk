@@ -9,21 +9,27 @@ body {
 }
 
 code {
-  background-color: #CCCCCC;
-  border: 2px solid #999;
+  border-left: 6px solid #CCCCCC;
+  padding-left: 10px;
   display: block;
-  padding: 20px;
   font-family: 'Source Code Pro', monospace;
+  text-align: left;
 }
 
 .monospace {
   font-family: 'Source Code Pro', monospace;
   background-color: #CCCCCC;
+  font-style: normal;
 }
 
 a {
   text-decoration: none;
   font-weight: bold;
+}
+
+.lesson-text {
+  text-align: left;
+  margin-top: 40px;
 }
 
 header {
@@ -34,7 +40,6 @@ section {
   margin: 15px;
   background-color: #E5E5E5;
   border: 5px solid #E5E5E5;
-  /* border: none; */
 }
 
 button:focus {
@@ -49,7 +54,6 @@ ol > li,
 }
 
 .framing {
-  /* border-color: #F7B733; */
   width: 50%;
   margin-bottom: 0;
 }
@@ -59,13 +63,10 @@ ol > li,
   border: none;
 }
 
-.try-it {
-  /* border-color: #FF4A1B; */
-}
-
 .key-point {
   background-color: white;
   border-color: #F7B733;
+  margin-top: 30px;
 }
 
 .key-point > p {
@@ -77,20 +78,8 @@ ol > li,
  font-size: 18px;
 }
 
-/* .try-it > nav > h3 {
-  color: #FF4A1B;
-} */
-
 .content {
   padding-bottom: 10px;
-}
-
-.checkpoint {
-  /* border-color: #5EC6B7; */
-}
-
-.challenge-problems {
-  /* border-color: #633295; */
 }
 
 .section-heading {
@@ -109,12 +98,19 @@ ol > li,
   background-size: contain;
 }
 
+.question {
+  text-align: left;
+  border-left: 6px solid #5EC6B7;
+  padding-left: 10px;
+}
+
 .hidden {
   display: none;
 }
 
 #cited {
-  font-size: 12px;
+  font-size: 10px;
+  text-align: right;
 }
 
 @media only screen and (min-width: 1200px) {

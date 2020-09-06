@@ -14,15 +14,15 @@
         <form>
           <div class="goals">
             <input type='checkbox' id='goal1' value='goal1' />
-            <label for='goal1'>Compare expressions using dot and bracket notation</label>
+            <label for='goal1'>equivalent expressions/comparing</label>
           </div>
           <div class="goals">
             <input type='checkbox' id='goal2' value='goal2' />
-            <label for='goal2'>Describe use cases for each notation</label>
+            <label for='goal2'>know when to use which one</label>
           </div>
           <div class="goals">
             <input type='checkbox' id='goal3' value='goal3' />
-            <label for='goal3'>Apply each notation to solve code challenges</label>
+            <label for='goal3'>application</label>
           </div>
         </form>
       </section>
@@ -43,26 +43,31 @@
       <article class='content hidden'>
         <ol>
           <li>Independently, complete the exercise found on <a href='https://repl.it/@kaylaewood/bracketVsDotTryIt1#main.js' target="_blank">this repl</a>.</li>
-          <li>When you finish, enter the numbers of the questions that you answered <strong>incorrectly</strong> into the zoom chat.</li>
+          <li>When you finish, answer this question in the zoom chat:</li>
+            <p class='question'>
+              Which of the following expressions is equivalent to <span class='monospace'>car.brand</span> ? <br />
+              A. <span class='monospace'>car[brand]</span> <br />
+              B. <span class='monospace'>car['brand']</span>
+            </p>
         </ol>
       </article>
     </section>
     <section class='lesson'>
       <h2>Equivalent Expressions</h2>
-      <table>
-        <tr>
-          <th>Dot Notation</th>
-          <th>Bracket Notation</th>
-        </tr>
-        <tr>
-          <td>someObject.someKey</td>
-          <td>someObject["someKey"]</td>
-        </tr>
-        <tr>
-          <td>not possible</td>
-          <td>someObject[someVariable]</td>
-        </tr>
-      </table>
+      <p>Objects are a key piece of working with JavaScript. In order for objects to be helpful for us, we have to be able to access the information inside of the objects. To do this, we can use <strong>dot notation</strong> or <strong>bracket notation</strong>.</p>
+      <p class='lesson-text'>Here are some examples of <strong>dot notation</strong>:</p>
+      <code>house.address<br/>student.gradeLevel<br/>school.classroom.teacher</code>
+      <p class='lesson-text'>Here are equivalent expressions written using <strong>bracket notation</strong>:</p>
+      <code>house[‘address’]<br />student[‘gradeLevel’]<br />school[‘classroom’][‘teacher’]</code>
+      <p class='lesson-text'> In the chat, answer this question:</p>
+      <p class='question'>What differences do you notice in the way each notation is written?</p>
+    </section>
+    <section class='key-point'>
+      <p><strong>Key Point #1: </strong>You can write equivalent expressions using dot and bracket notation. <span class='monospace'>object.property</span> is equivalent to <span class='monospace'>object['property']</span></p>
+    </section>
+    <section class='lesson'>
+      <h2>Chaining</h2>
+      <p>Something</p>
     </section>
     <section class='try-it'>
       <nav class='section-heading'>
@@ -71,29 +76,20 @@
       </nav>
       <article class='content hidden'>
         <ol>
-          <li>Complete the exercise found on <a href='https://repl.it/@kaylaewood/bracketVsDotTryIt2#main.js' target="_blank">this repl</a>.</li>
-          <li>When you finish, answer this question in the zoom chat: Which notation is easier to read and write?</li>
+          <li>Independently, complete the exercise found on <a href='https://repl.it/@kaylaewood/bracketVsDotTryIt2#main.js' target="_blank">this repl</a>.</li>
+          <li>When you finish, answer this question in the zoom chat:</li>
+          <div class='question'>
+             In your opinion, which notation is easier to read and write?
+          </div>
         </ol>
       </article>
     </section>
     <section class='key-point'>
-      <p><strong>Key Point #1: </strong>Whenever it is possible, we will default to using dot notation.</p>
+      <p><strong>Key Point #2: </strong>Whenever it is possible, we will default to using dot notation.</p>
     </section>
     <section class='lesson'>
       <h2>Bracket Notation & Variables</h2>
       <p>Something</p>
-    </section>
-    <section class='checkpoint'>
-      <nav class='section-heading'>
-        <h3>Pause & Reflect #1</h3>
-        <button type="button" class="collapse-button"></button>
-      </nav>
-      <article class='content hidden'>
-        <ol>
-          <li>What is the difference between <span class='monospace'>pet[name]</span> and <span class='monospace'>pet["name"]</span>?</li>
-          <li>Which expression above is equivalent to <span class='monospace'>pet.name</span>?</li>
-        </ol>
-      </article>
     </section>
     <section class='try-it'>
       <nav class='section-heading'>
@@ -108,10 +104,10 @@
       </article>
     </section>
     <section class='key-point'>
-      <p><strong>Key Point #2: </strong>Whenever we are accessing an object with variables, we must use bracket notation.</p>
+      <p><strong>Key Point #3: </strong>Whenever we are accessing an object with variables, we must use bracket notation.</p>
     </section>
     <section class='lesson'>
-      <h2>Title</h2>
+      <h2>Application</h2>
       <p>Something</p>
     </section>
     <section class='challenge-problems'>
