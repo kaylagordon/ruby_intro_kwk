@@ -36,6 +36,11 @@ header {
   display: flex;
 }
 
+h2 {
+  margin-top: 50px;
+  margin-bottom: -25px;
+}
+
 section {
   margin: 15px;
   background-color: #E5E5E5;
@@ -106,6 +111,21 @@ ol > li,
 
 .hidden {
   display: none;
+}
+
+.indent1 {
+  padding-left: 25px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.indent2 {
+  padding-left: 50px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.indent3 {
+  padding-left: 75px;
+  font-family: 'Source Code Pro', monospace;
 }
 
 #cited {

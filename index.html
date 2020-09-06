@@ -54,7 +54,7 @@
     </section>
     <section class='lesson'>
       <h2>Equivalent Expressions</h2>
-      <p>Objects are a key piece of working with JavaScript. In order for objects to be helpful for us, we have to be able to access the information inside of the objects. To do this, we can use <strong>dot notation</strong> or <strong>bracket notation</strong>.</p>
+      <p class='lesson-text'>Objects are a key piece of working with JavaScript. In order for objects to be helpful for us, we have to be able to access the information inside of the objects. To do this, we can use <strong>dot notation</strong> or <strong>bracket notation</strong>.</p>
       <p class='lesson-text'>Here are some examples of <strong>dot notation</strong>:</p>
       <code>house.address<br/>student.gradeLevel<br/>school.classroom.teacher</code>
       <p class='lesson-text'>Here are equivalent expressions written using <strong>bracket notation</strong>:</p>
@@ -67,7 +67,26 @@
     </section>
     <section class='lesson'>
       <h2>Chaining</h2>
-      <p>Something</p>
+      <p class='lesson-text'>As you have seen in a couple of examples today, you can chain multiple properties onto an expression in order to dig in deeper on an object. Let’s take this object, for example:</p>
+      <code>
+        var user = {<br />
+          <span class='indent1'>email: ‘jonathan@email.com’,</span><br />
+          <span class='indent1'>name: ‘Jonathan’,</span><br />
+          <span class='indent1'>contactInfo: {</span><br />
+            <span class='indent2'>phone: 123456789</span><br />
+            <span class='indent2'>address: {</span><br />
+              <span class='indent3'>street: ‘1234 Main Street’,</span><br />
+              <span class='indent3'>city: ‘Denver’</span><br />
+              <span class='indent3'>state: ‘CO’</span><br />
+              <span class='indent3'>zip: 80206</span><br />
+           <span class='indent2'>}</span><br />
+         <span class='indent1'>}</span><br />
+       }
+      </code>
+      <p class='lesson-text'>If we wanted to access this user’s zip code using dot notation, we could write:<br /><code>user.contactInfo.address.zip</code></p>
+
+      <p class='lesson-text'>In order to access their zip using bracket notation, we would write:<br /><code>user[‘contactInfo’][‘address’][‘zip’]</code></p>
+      <p class='lesson-text'>You can also mix and match! We could write something like this and it would work.<br /><code>user.contactInfo[‘address’].zip</code><br /></p>
     </section>
     <section class='try-it'>
       <nav class='section-heading'>
@@ -89,7 +108,7 @@
     </section>
     <section class='lesson'>
       <h2>Bracket Notation & Variables</h2>
-      <p>Something</p>
+      <p class='lesson-text'>Something</p>
     </section>
     <section class='try-it'>
       <nav class='section-heading'>
@@ -107,8 +126,8 @@
       <p><strong>Key Point #3: </strong>Whenever we are accessing an object with variables, we must use bracket notation.</p>
     </section>
     <section class='lesson'>
-      <h2>Application</h2>
-      <p>Something</p>
+      <h2>Applying What We've Learned</h2>
+      <p class='lesson-text'>Something</p>
     </section>
     <section class='challenge-problems'>
       <nav class='section-heading'>
