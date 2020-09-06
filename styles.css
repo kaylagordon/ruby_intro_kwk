@@ -52,10 +52,29 @@ button:focus {
 }
 
 ul > li,
-ol > li,
-.goals {
+ol > li {
   margin-bottom: 15px;
   text-align: left;
+}
+
+.goals {
+  display: flex;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.goals > p {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.goals > label {
+  text-align: left;
+  padding-left: 8px;
+}
+
+.goals > input {
+  margin-top: 5px;
 }
 
 .framing {

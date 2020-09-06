@@ -13,16 +13,23 @@
         <h3>Learning Goals</h3>
         <form>
           <div class="goals">
-            <input type='checkbox' id='goal1' value='goal1' />
-            <label for='goal1'>equivalent expressions/comparing</label>
+            <p>We will be able to...</p>
           </div>
           <div class="goals">
-            <input type='checkbox' id='goal2' value='goal2' />
-            <label for='goal2'>know when to use which one</label>
+            <input type="checkbox" id="goal1" value="goal1" />
+            <label for="goal1">Use dot and bracket notation to access objects</label>
           </div>
           <div class="goals">
-            <input type='checkbox' id='goal3' value='goal3' />
-            <label for='goal3'>application</label>
+            <input type="checkbox" id="goal2" value="goal2" />
+            <label for="goal2">Compare expressions in dot and bracket notation and identify equivalent expressions</label>
+          </div>
+          <div class="goals">
+            <input type="checkbox" id="goal3" value="goal3" />
+            <label for="goal3">Determine appropriate use cases for each notation</label>
+          </div>
+          <div class="goals">
+            <input type="checkbox" id="goal4" value="goal4" />
+            <label for="goal4">Apply our knowledge of each notation to solve code challenges</label>
           </div>
         </form>
       </section>
@@ -35,139 +42,139 @@
         </ul>
       </section>
     </header>
-    <section class='try-it'>
-      <nav class='section-heading'>
+    <section class="try-it">
+      <nav class="section-heading">
         <h3>Try It #1</h3>
         <button type="button" class="collapse-button"></button>
       </nav>
-      <article class='content hidden'>
+      <article class="content hidden">
         <ol>
-          <li>Independently, complete the exercise found on <a href='https://repl.it/@kaylaewood/bracketVsDotTryIt1#main.js' target="_blank">this repl</a>.</li>
+          <li>Independently, complete the exercise found on <a href="https://repl.it/@kaylaewood/bracketVsDotTryIt1#main.js" target="_blank">this repl</a>.</li>
           <li>When you finish, answer this question in the zoom chat:</li>
-            <p class='question'>
-              Which of the following expressions is equivalent to <span class='monospace'>car.brand</span> ? <br />
-              A. <span class='monospace'>car[brand]</span> <br />
-              B. <span class='monospace'>car['brand']</span>
+            <p class="question">
+              Which of the following expressions is equivalent to <span class="monospace">car.brand</span> ? <br />
+              A. <span class="monospace">car[brand]</span> <br />
+              B. <span class="monospace">car['brand']</span>
             </p>
         </ol>
       </article>
     </section>
-    <section class='lesson'>
+    <section class="lesson">
       <h2>Equivalent Expressions</h2>
-      <p class='lesson-text'>Objects are a key piece of working with JavaScript. In order for objects to be helpful for us, we have to be able to access the information inside of the objects. To do this, we can use <strong>dot notation</strong> or <strong>bracket notation</strong>.</p>
-      <p class='lesson-text'>Here are some examples of <strong>dot notation</strong>:</p>
+      <p class="lesson-text">Objects are a key piece of working with JavaScript. In order for objects to be helpful for us, we have to be able to access the information inside of the objects. To do this, we can use <strong>dot notation</strong> or <strong>bracket notation</strong>.</p>
+      <p class="lesson-text">Here are some examples of <strong>dot notation</strong>:</p>
       <code>house.address<br/>student.gradeLevel<br/>school.classroom.teacher</code>
-      <p class='lesson-text'>Here are equivalent expressions written using <strong>bracket notation</strong>:</p>
+      <p class="lesson-text">Here are equivalent expressions written using <strong>bracket notation</strong>:</p>
       <code>house[‘address’]<br />student[‘gradeLevel’]<br />school[‘classroom’][‘teacher’]</code>
-      <p class='lesson-text'> In the chat, answer this question:</p>
-      <p class='question'>What differences do you notice in the way each notation is written?</p>
+      <p class="lesson-text"> In the chat, answer this question:</p>
+      <p class="question">What differences do you notice in the way each notation is written?</p>
     </section>
-    <section class='key-point'>
-      <p><strong>Key Point #1: </strong>You can write equivalent expressions using dot and bracket notation. <span class='monospace'>object.property</span> is equivalent to <span class='monospace'>object['property']</span></p>
+    <section class="key-point">
+      <p><strong>Key Point #1: </strong>You can write equivalent expressions using dot and bracket notation. <span class="monospace">object.property</span> is equivalent to <span class="monospace">object['property']</span></p>
     </section>
-    <section class='lesson'>
+    <section class="lesson">
       <h2>Chaining</h2>
-      <p class='lesson-text'>As you have seen in a couple of examples today, you can chain multiple properties onto an expression in order to dig in deeper on an object. Let’s take this object, for example:</p>
+      <p class="lesson-text">As you have seen in a couple of examples today, you can chain multiple properties onto an expression in order to dig in deeper on an object. Let’s take this object, for example:</p>
       <code>
         var user = {<br />
-          <span class='indent1'>email: ‘jonathan@email.com’,</span><br />
-          <span class='indent1'>name: ‘Jonathan’,</span><br />
-          <span class='indent1'>contactInfo: {</span><br />
-            <span class='indent2'>phone: 123456789</span><br />
-            <span class='indent2'>address: {</span><br />
-              <span class='indent3'>street: ‘1234 Main Street’,</span><br />
-              <span class='indent3'>city: ‘Denver’</span><br />
-              <span class='indent3'>state: ‘CO’</span><br />
-              <span class='indent3'>zip: 80206</span><br />
-           <span class='indent2'>}</span><br />
-         <span class='indent1'>}</span><br />
+          <span class="indent1">email: ‘jonathan@email.com’,</span><br />
+          <span class="indent1">name: ‘Jonathan’,</span><br />
+          <span class="indent1">contactInfo: {</span><br />
+            <span class="indent2">phone: 123456789</span><br />
+            <span class="indent2">address: {</span><br />
+              <span class="indent3">street: ‘1234 Main Street’,</span><br />
+              <span class="indent3">city: ‘Denver’</span><br />
+              <span class="indent3">state: ‘CO’</span><br />
+              <span class="indent3">zip: 80206</span><br />
+           <span class="indent2">}</span><br />
+         <span class="indent1">}</span><br />
        }
       </code>
-      <p class='lesson-text'>If we wanted to access this user’s zip code using <strong>dot notation</strong>, we could write:<br /><code>user.contactInfo.address.zip</code></p>
+      <p class="lesson-text">If we wanted to access this user’s zip code using <strong>dot notation</strong>, we could write:<br /><code>user.contactInfo.address.zip</code></p>
 
-      <p class='lesson-text'>In order to access their zip using <strong>bracket notation</strong>, we would write:<br /><code>user[‘contactInfo’][‘address’][‘zip’]</code></p>
-      <p class='lesson-text'>You can also mix and match! We could write something like this and it would work.<br /><code>user.contactInfo[‘address’].zip</code></p>
-      <p class='lesson-text'>Notice how each block is formatted:</p>
-      <p id='breakdown-unit'><span class='breakdown'>user</span><span class='breakdown'>.contactInfo</span><span class='breakdown'>[‘address’]</span><span class='breakdown'>.zip</span></p>
+      <p class="lesson-text">In order to access their zip using <strong>bracket notation</strong>, we would write:<br /><code>user[‘contactInfo’][‘address’][‘zip’]</code></p>
+      <p class="lesson-text">You can also mix and match! We could write something like this and it would work.<br /><code>user.contactInfo[‘address’].zip</code></p>
+      <p class="lesson-text">Notice how each block is formatted:</p>
+      <p id="breakdown-unit"><span class="breakdown">user</span><span class="breakdown">.contactInfo</span><span class="breakdown">[‘address’]</span><span class="breakdown">.zip</span></p>
     </section>
-    <section class='try-it'>
-      <nav class='section-heading'>
+    <section class="try-it">
+      <nav class="section-heading">
         <h3>Try It #2</h3>
         <button type="button" class="collapse-button"></button>
       </nav>
-      <article class='content hidden'>
+      <article class="content hidden">
         <ol>
-          <li>Independently, complete the exercise found on <a href='https://repl.it/@kaylaewood/bracketVsDotTryIt2#main.js' target="_blank">this repl</a>.</li>
+          <li>Independently, complete the exercise found on <a href="https://repl.it/@kaylaewood/bracketVsDotTryIt2#main.js" target="_blank">this repl</a>.</li>
           <li>When you finish, answer this question in the zoom chat:</li>
-          <p class='question'>
+          <p class="question">
              In your opinion, which notation is easier to read and write?
           </p>
         </ol>
       </article>
     </section>
-    <section class='key-point'>
+    <section class="key-point">
       <p><strong>Key Point #2: </strong>Whenever it is possible, we will default to using dot notation.</p>
     </section>
-    <section class='lesson'>
+    <section class="lesson">
       <h2>Bracket Notation & Variables</h2>
-      <p class='lesson-text'>Dot notation only works if you have access to the exact property name. Dot notation interprets the expression literally. Meaning, it will look for the actual property that is passed in. Let’s take, for example, <a href="https://repl.it/@kaylaewood/bracketVsDotlesson1">this code block</a>:</p>
+      <p class="lesson-text">Dot notation only works if you have access to the exact property name. Dot notation interprets the expression literally. Meaning, it will look for the actual property that is passed in. Let’s take, for example, <a href="https://repl.it/@kaylaewood/bracketVsDotlesson1" target="_blank">this code block</a>:</p>
       <code>
         var phrases = {<br />
-          <span class='indent1'>greeting: 'hello',</span><br />
-          <span class='indent1'>departing: 'goodbye'</span><br />
+          <span class="indent1">greeting: 'hello',</span><br />
+          <span class="indent1">departing: 'goodbye'</span><br />
        } <br /> <br />
        var lookupField = 'greeting';
       </code>
-      <p class='lesson-text'>If we ran the  command below, we would get undefined. This is because the JavaScript interpreter is looking for a property that is literally called “lookupField” and it does not exist:</p>
+      <p class="lesson-text">If we ran the  command below, we would get undefined. This is because the JavaScript interpreter is looking for a property that is literally called “lookupField” and it does not exist:</p>
       <code>console.log(phrases.lookupField);<br />//output: undefined</code>
-      <p class='lesson-text'>The same would happen in this case:</p>
+      <p class="lesson-text">The same would happen in this case:</p>
       <code>console.log(phrases['lookupField']);<br />//output: undefined</code>
-      <p class='lesson-text'>We can use bracket notation in our favor, by passing in the variable, like the example below. In this case, the interpreter will register lookupField as a variable and then pass in it’s value of ‘greeting’ to get the output of ‘hello’:</p>
+      <p class="lesson-text">We can use bracket notation in our favor, by passing in the variable, like the example below. In this case, the interpreter will register lookupField as a variable and then pass in it’s value of ‘greeting’ to get the output of ‘hello’:</p>
       <code>console.log(phrases[lookupField]);<br />//output: ‘hello’</code>
-      <p class='lesson-text'>If we reassigned the value of lookupField and then ran the same command as above, we’d get a new output:</p>
+      <p class="lesson-text">If we reassigned the value of lookupField and then ran the same command as above, we’d get a new output:</p>
       <code>lookupField = 'leaving';<br /><br />console.log(phrases[lookupField]);<br />//output: 'goodbye'</code>
-      <p class='lesson-text'>Bracket notation gives us the ability to use variables to look up values in an object. This is especially helpful with the value of the variable changes.</p>
+      <p class="lesson-text">Bracket notation gives us the ability to use variables to look up values in an object. This is especially helpful with the value of the variable changes.</p>
     </section>
-    <section class='key-point'>
+    <section class="key-point">
       <p><strong>Key Point #3: </strong>Whenever we are accessing an object with variables, we must use bracket notation.</p>
     </section>
-    <section class='try-it'>
-      <nav class='section-heading'>
+    <section class="try-it">
+      <nav class="section-heading">
         <h3>Try It #3</h3>
         <button type="button" class="collapse-button"></button>
       </nav>
-      <article class='content hidden'>
+      <article class="content hidden">
         <ol>
-          <li>In a breakout room, discuss the questions found on <a href='https://repl.it/@kaylaewood/bracketVsDotTryIt3#main.js' target="_blank">this repl</a>.</li>
+          <li>In a breakout room, discuss the questions found on <a href="https://repl.it/@kaylaewood/bracketVsDotTryIt3#main.js" target="_blank">this repl</a>.</li>
           <li>You will have 5 minutes in these breakout rooms. Be prepared to discuss as a whole group after. Write down any questions that pop up along the way so we can disucss as a group!</li>
         </ol>
       </article>
     </section>
-    <section class='lesson'>
+    <section class="lesson">
       <h2>Applying What We've Learned</h2>
-      <p class='lesson-text'>Now that we've covered the fundamentals, let's look at how we can apply bracket and dot notation in live code.</p>
+      <p class="lesson-text">Now that we've covered the fundamentals, let's look at how we can apply bracket and dot notation in live code.</p>
     </section>
-    <section class='try-it'>
-      <nav class='section-heading'>
+    <section class="try-it">
+      <nav class="section-heading">
         <h3>Try It #4</h3>
         <button type="button" class="collapse-button"></button>
       </nav>
-      <article class='content hidden'>
+      <article class="content hidden">
         <ol>
-          <li>In a breakout room, discuss the questions found on <a href='https://repl.it/@kaylaewood/bracketVsDotTryIt4#main.js' target="_blank">this repl</a>.</li>
+          <li>In a breakout room, discuss the questions found on <a href="https://repl.it/@kaylaewood/bracketVsDotTryIt4#main.js" target="_blank">this repl</a>.</li>
           <li>You will have 5 minutes in these breakout rooms. Be prepared to discuss as a whole group after. Write down any questions that pop up along the way so we can disucss as a group!</li>
         </ol>
       </article>
     </section>
-    <section class='challenge-problems'>
-      <nav class='section-heading'>
+    <section class="challenge-problems">
+      <nav class="section-heading">
         <h3>Challenge Problems ("Homework")</h3>
         <button type="button" class="collapse-button"></button>
       </nav>
-      <article class='content hidden'>
+      <article class="content hidden">
         <ol>
-          <li>Complete the code challenges found on <a href='https://repl.it/@kaylaewood/bracketVsDotChallengeProblems#index.js' target="_blank">this repl</a>.</li>
-          <li>Answer the questions found in the JavaScript section of <a href='https://codepen.io/kaylaewood/pen/wvGrQxV?editors=1010' target="_blank">this codepen</a>.</li>
+          <li>Complete the code challenges found on <a href="https://repl.it/@kaylaewood/bracketVsDotHomework" target="_blank">this repl</a>.<br />Stuck? Look <a href="https://repl.it/@kaylaewood/bracketVsDotHomeworkAnswers#main.js" target="_blank">here</a>.</li>
+          <li>Answer the questions found in the JavaScript section of <a href="https://codepen.io/kaylaewood/pen/wvGrQxV?editors=1010" target="_blank">this codepen</a>.</li>
         </ol>
       </article>
     </section>
