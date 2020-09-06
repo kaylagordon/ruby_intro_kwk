@@ -151,6 +151,11 @@ ol > li {
   border-color: #5EC6B7;
 }
 
+.complete {
+  color: green;
+  font-style: italic;
+}
+
 #breakdown-unit {
   margin-bottom: 45px;
 }
