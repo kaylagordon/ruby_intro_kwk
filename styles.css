@@ -161,6 +161,16 @@ ol > li,
   font-style: italic;
 }
 
+#equvalent-boxes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.equivalent-box {
+  width: 45%;
+
+}
+
 #date-heading {
   margin-top: 0;
   margin-bottom: 25px;
