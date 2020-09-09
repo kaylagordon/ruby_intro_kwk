@@ -209,4 +209,10 @@ ol > li,
   .framing {
     width: auto;
   }
+  #equvalent-boxes {
+    flex-direction: column;
+  }
+  .equivalent-box {
+    width: auto;
+  }
 }
