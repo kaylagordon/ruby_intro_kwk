@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Bracket vs. Dot Notation</title>
+    <title>Introduction to Ruby</title>
   </head>
   <body>
-    <h1>Bracket vs. Dot Notation</h1>
-    <h2 id='date-heading'>Accessing Objects in JavaScript</h2>
+    <h1>Introduction to Ruby</h1>
     <header>
       <section class="framing learning-goals">
         <h3>Learning Goals</h3>
@@ -18,160 +17,129 @@
           </div>
           <div class="goals">
             <input type="checkbox" id="goal1" value="goal1" class="goal-checkbox" />
-            <label class="" for="goal1">Use dot and bracket notation to access objects</label>
+            <label class="" for="goal1">Explore code written in Ruby</label>
           </div>
           <div class="goals">
             <input type="checkbox" id="goal2" value="goal2" class="goal-checkbox" />
-            <label class="" for="goal2">Compare expressions in dot and bracket notation and identify equivalent expressions</label>
+            <label class="" for="goal2">Display information in the console</label>
           </div>
           <div class="goals">
             <input type="checkbox" id="goal3" value="goal3" class="goal-checkbox" />
-            <label class="" for="goal3">Determine appropriate use cases for each notation</label>
-          </div>
-          <div class="goals">
-            <input type="checkbox" id="goal4" value="goal4" class="goal-checkbox" />
-            <label class="" for="goal4">Apply our knowledge of each notation to gain a deeper understanding about a familiar concept</label>
+            <label class="" for="goal3">Compare and contrast the `puts` and `print` commands</label>
           </div>
         </form>
       </section>
       <section class="framing">
         <h3>Vocabulary</h3>
-          <p class='vocab'><strong>Object</strong>: an unordered collection of related data in the form of key value pairs. JavaScript provides two notations for accessing object properties...</p>
-          <p class='vocab'><strong>Dot Notation</strong>: a property in an object is accessed by giving the object’s name, followed by a period, followed by the property name (Example: <span class="monospace">user.name</span>)</p>
-          <p class='vocab'><strong>Bracket Notation</strong>: the object name is followed by a set of square brackets, with the property name specified as a string inside the brackets (Example: <span class="monospace">user['name']</span>)</p>
+          <p class='vocab'><strong>Ruby</strong>: a programming language used by software developers</p>
+          <p class='vocab'><strong>Console</strong>: a computer terminal where software developers can view outputs of their code</p>
       </section>
     </header>
-    <section>
+    <section class="try-it">
       <nav class="section-heading">
-        <h3>Try It #1</h3>
+        <h3>Try It #1: Explore</h3>
         <button aria-label="Collapse/Expand Activity 1" type="button" class="collapse-button"></button>
       </nav>
       <article class="content hidden">
         <ol>
-          <li>Independently, complete the exercise found on <a href="https://repl.it/@kaylaewood/bracketVsDotTryIt1#main.js" target="_blank">this repl</a>.</li>
-          <li>When you finish, use the zoom chat to DM me your answer to this question:</li>
+          <li>Independently, open up <a href="https://replit.com/@kaylaewood/IntroToRubyExplore#main.rb" target="_blank">this repl</a>.</li>
+          <li>Click the <strong>Run</strong> button and look closely at what gets printed in the console. Write down your thoughts on the following questions:</li>
             <p class="question">
-              Which of the following expressions is equivalent to <span class="monospace">car.brand</span> ? <br />
-              A. <span class="monospace">car[brand]</span> <br />
-              B. <span class="monospace">car['brand']</span>
+              - What is similar about the <span class="monospace">puts</span> and <span class="monospace">print</span> commands?
+              <br />
+              - What is different about the <span class="monospace">puts</span> and <span class="monospace">print</span> commands?
             </p>
         </ol>
       </article>
     </section>
     <section class="lesson">
-      <h2>Equivalent Expressions</h2>
-      <p class="lesson-text">Objects are a key piece of working with JavaScript. In order for objects to be helpful for us, we have to be able to access the information inside of the objects. To do this, we can use <strong>dot notation</strong> or <strong>bracket notation</strong>.</p>
-      <div id="equvalent-boxes">
-        <div class="equivalent-box">
-          <p class="lesson-text">Here are some examples of <strong>dot notation</strong>:</p>
-          <code>house.address<br/>student.gradeLevel<br/>school.classroom.teacher</code>
+      <h2>Displaying Information in the Console</h2>
+      <p class="lesson-text">One of the most important things that our code will do is display information to our user. Maybe we want to show our user the current weather or what items our shop has for sale. In Ruby, we will display information to our users with the keywords <strong>puts</strong> and <strong>print</strong>. Let's look at some examples below:</p>
+      <div id="side-by-side-boxes">
+        <div class="side-by-side-box">
+          <h4 class="lesson-text puts-color">Our Code:</h4>
+          <code>puts 'Hello World!'</code>
         </div>
-        <div class="equivalent-box">
-          <p class="lesson-text">Here are equivalent expressions in <strong>bracket notation</strong>:</p>
-          <code>house[‘address’]<br />student[‘gradeLevel’]<br />school[‘classroom’][‘teacher’]</code>
+        <div class="side-by-side-box">
+          <h4 class="lesson-text print-color">Our Code:</h4>
+          <code>print 'Hello World!'</code>
         </div>
       </div>
-      <p class="lesson-text"> In the zoom chat, answer this question:</p>
-      <p class="question">What differences do you notice in the way each notation is written?</p>
+      <div id="side-by-side-boxes">
+        <div class="side-by-side-box">
+          <h4 class="lesson-text puts-color">Output:</h4>
+          <code>Hello World!</code>
+        </div>
+        <div class="side-by-side-box">
+          <h4 class="lesson-text print-color">Output:</h4>
+          <code>Hello World!</code>
+        </div>
+      </div>
     </section>
     <section class="key-point">
-      <p><strong>Key Point #1: </strong>You can write equivalent expressions using dot and bracket notation. For example: <br /> <br /> <span class="monospace">object.property</span> is equivalent to <span class="monospace">object['property']</span></p>
+      <p><strong>Key Point #1: </strong>In Ruby, the commands <strong>puts</strong> and <strong>print</strong> will both display information in the console.</p>
     </section>
-    <section class="lesson">
-      <h2>Chaining</h2>
-      <p class="lesson-text">As you have seen in a couple of examples today, you can chain multiple properties onto an expression in order to dig in deeper on an object. Let’s take this object, for example:</p>
-      <code>
-        var user = {<br />
-          <span class="indent1">email: ‘jonathan@email.com’,</span><br />
-          <span class="indent1">name: ‘Jonathan’,</span><br />
-          <span class="indent1">contactInfo: {</span><br />
-            <span class="indent2">phone: 123456789</span><br />
-            <span class="indent2">address: {</span><br />
-              <span class="indent3">street: ‘1234 Main Street’,</span><br />
-              <span class="indent3">city: ‘Denver’</span><br />
-              <span class="indent3">state: ‘CO’</span><br />
-              <span class="indent3">zip: 80206</span><br />
-           <span class="indent2">}</span><br />
-         <span class="indent1">}</span><br />
-       }
-      </code>
-      <p class="lesson-text">If we wanted to access this user’s zip code using <strong>dot notation</strong>, we could write:<br /><code>user.contactInfo.address.zip</code></p>
 
-      <p class="lesson-text">In order to access their zip using <strong>bracket notation</strong>, we would write:<br /><code>user[‘contactInfo’][‘address’][‘zip’]</code></p>
-      <p class="lesson-text">You can also mix and match! We could write something like this and it would work.<br /><code>user.contactInfo[‘address’].zip</code></p>
-      <p class="lesson-text">Notice how each block is formatted:</p>
-      <p id="breakdown-unit"><span class="breakdown">user</span><span class="breakdown">.contactInfo</span><span class="breakdown">[‘address’]</span><span class="breakdown">.zip</span></p>
+    <section class="lesson">
+      <p class="lesson-text">The keywords <strong>puts</strong> and <strong>print</strong> seem really similar, right? Let's see how they differ:</p>
+      <div id="side-by-side-boxes">
+        <div class="side-by-side-box">
+          <h4 class="lesson-text puts-color">Our Code:</h4>
+          <code>puts 'Hello World!' <br/> puts 'I hope you have a great day!'</code>
+        </div>
+        <div class="side-by-side-box">
+          <h4 class="lesson-text print-color">Our Code:</h4>
+          <code>print 'Hello World!' <br/> print 'I hope you have a great day!'</code>        </div>
+      </div>
+      <div id="side-by-side-boxes">
+        <div class="side-by-side-box">
+          <h4 class="lesson-text puts-color">Output:</h4>
+          <code>Hello World!<br/>I hope you have a great day!</code>
+        </div>
+        <div class="side-by-side-box">
+          <h4 class="lesson-text print-color">Output:</h4>
+          <code>Hello World!I hope you have a great day!</code>
+        </div>
+      </div>
     </section>
-    <section>
+
+    <section class="key-point">
+      <p><strong>Key Point #2: </strong>The difference between <strong>puts</strong> and <strong>print</strong> is that when you use <strong>puts</strong>, Ruby adds a new line at the end of each statement. Ruby does not add a new line with the keyword <strong>print</strong>.</p>
+    </section>
+
+    <section class="lesson">
+      <h2>Applying What We've Learned</h2>
+      <p class="lesson-text">Let's apply what we learned with a new set of challenges!</p>
+    </section>
+    <section class="try-it">
       <nav class="section-heading">
-        <h3>Try It #2</h3>
+        <h3>Try It #2: Apply</h3>
         <button aria-label="Collapse/Expand Activity 2" type="button" class="collapse-button"></button>
       </nav>
       <article class="content hidden">
         <ol>
-          <li>Independently, complete the exercise found on <a href="https://repl.it/@kaylaewood/bracketVsDotTryIt2#main.js" target="_blank">this repl</a>.</li>
-          <li>When you finish, use the zoom chat to DM me your answer to this question:</li>
-          <p class="question">
-             In your opinion, which notation is easier to read and write?
-          </p>
+          <li>Work through the challenges listed in <a href="https://replit.com/@kaylaewood/IntroToRubyApply#main.rb" target="_blank">this repl</a>.</li>
+          <li>Write down any questions that pop up along the way!</li>
         </ol>
       </article>
     </section>
-    <section class="key-point">
-      <p><strong>Key Point #2: </strong>Whenever it is possible, we will default to using dot notation.</p>
-    </section>
     <section class="lesson">
-      <h2>Bracket Notation & Variables</h2>
-      <p class="lesson-text">Dot notation only works if you have access to the exact property name. Dot notation interprets the expression literally. Meaning, it will look for the actual property that is passed in. Let’s take, for example, <a href="https://repl.it/@kaylaewood/bracketVsDotlesson1" target="_blank">this code block</a>:</p>
-      <code>
-        var phrases = {<br />
-          <span class="indent1">greeting: 'hello',</span><br />
-          <span class="indent1">departing: 'goodbye'</span><br />
-       } <br /> <br />
-       var lookupField = 'greeting';
-      </code>
-      <p class="lesson-text">If we ran the  command below, we would get undefined. This is because the JavaScript interpreter is looking for a property that is literally called “lookupField” and it does not exist:</p>
-      <code>console.log(phrases.lookupField);<br />//output: undefined</code>
-      <p class="lesson-text">The same would happen in this case:</p>
-      <code>console.log(phrases['lookupField']);<br />//output: undefined</code>
-      <p class="lesson-text">We can use bracket notation in our favor, by passing in the variable, like the example below. In this case, the interpreter will register lookupField as a variable and then pass in it’s value of ‘greeting’ to get the output of ‘hello’:</p>
-      <code>console.log(phrases[lookupField]);<br />//output: ‘hello’</code>
-      <p class="lesson-text">If we reassigned the value of lookupField and then ran the same command as above, we’d get a new output:</p>
-      <code>lookupField = 'leaving';<br /><br />console.log(phrases[lookupField]);<br />//output: 'goodbye'</code>
-      <p class="lesson-text">Bracket notation gives us the ability to use variables to look up values in an object. This is especially helpful with the value of the variable changes.</p>
+      <h2>Looking Ahead</h2>
+      <p class="lesson-text">In our next lesson, we'll talk about <strong>variables</strong> and <strong>string interpolation</strong>. In order to prepare for that lesson, complete the challenge problems below.</p>
     </section>
-    <section class="key-point">
-      <p><strong>Key Point #3: </strong>Whenever we are accessing an object's property using a variable, we must use bracket notation.</p>
-    </section>
-    <section class="lesson">
-      <h2>Applying What We've Learned</h2>
-      <p class="lesson-text">Even if these concepts are new to you, you've actually been putting them into practice for awhile now! Let's take a deeper look into something familiar to you: <strong>for loops</strong>.</p>
-    </section>
-    <section>
+    <section class="try-it">
       <nav class="section-heading">
-        <h3>Try It #3</h3>
+        <h3>Try It #3: Challenge Problems</h3>
         <button aria-label="Collapse/Expand Activity 3" type="button" class="collapse-button"></button>
       </nav>
       <article class="content hidden">
         <ol>
-          <li>In a breakout room, discuss the questions found on <a href="https://repl.it/@kaylaewood/bracketVsDotTryIt4#main.js" target="_blank">this repl</a>.</li>
-          <li>Be prepared to discuss as a whole group after. Write down any questions that pop up along the way so we can disucss as a group!</li>
+          <li>Complete the code challenges found on <a href="https://replit.com/@kaylaewood/IntroToRubyChallenge#main.rb" target="_blank">this repl</a>.
+          <li>Write down any questions that pop up along the way!</li>
         </ol>
       </article>
     </section>
-    <section class="challenge-problems">
-      <nav class="section-heading">
-        <h3>Challenge Problems -- Homework</h3>
-        <button aria-label="Collapse/Expand Activity 5" type="button" class="collapse-button"></button>
-      </nav>
-      <article class="content hidden">
-        <ol>
-          <li>Complete the code challenges found on <a href="https://repl.it/@kaylaewood/bracketVsDotHomework" target="_blank">this repl</a>.<br />Stuck? Look <a href="https://repl.it/@kaylaewood/bracketVsDotHomeworkAnswers#main.js" target="_blank">here</a>.</li>
-          <li>Answer the questions found in the JavaScript section of <a href="https://codepen.io/kaylaewood/pen/wvGrQxV?editors=1010" target="_blank">this codepen</a>.</li>
-        </ol>
-      </article>
-    </section>
-    <p id="cited">Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+    <p id="cited">Site made by Kayla Gordon. Source code can be found <a href="https://github.com/kaylagordon/ruby_intro_kwk" title="github source code">here</a>. Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> and <a href="https://www.flaticon.com/authors/stockio" title="stockio">stockio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
 </body>
 <script type="text/javascript" src="main.js"></script>
 </html>

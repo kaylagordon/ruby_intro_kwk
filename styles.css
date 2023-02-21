@@ -43,8 +43,13 @@ h2 {
 
 section {
   margin: 15px;
-  background-color: #E5E5E5;
-  border: 5px solid #E5E5E5;
+  background-color: #8AA6D3;
+  border: 5px solid #170055;
+}
+
+.try-it {
+  background-color: #B5FFD9;
+  border: 5px solid #007153;
 }
 
 button:focus {
@@ -93,8 +98,8 @@ ol > li,
 }
 
 .key-point {
-  background-color: white;
-  border-color: #F7B733;
+  background-color: #E3FF00;
+  border-color: #E3FF00;
   margin-top: 30px;
 }
 
@@ -120,7 +125,7 @@ ol > li,
 .section-heading > button {
   width: 30px;
   border: none;
-  background-color: #E5E5E5;
+  background-color: #B5FFD9;
   background-image: url("resources/expand.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -129,7 +134,7 @@ ol > li,
 
 .question {
   text-align: left;
-  border-left: 6px solid #5EC6B7;
+  border-left: 6px solid #007153;
   padding-left: 10px;
 }
 
@@ -152,23 +157,27 @@ ol > li,
   font-family: 'Source Code Pro', monospace;
 }
 
-.challenge-problems {
-  border-color: #5EC6B7;
-}
-
 .complete {
-  color: green;
+  color: #FF99FC;
   font-style: italic;
 }
 
-#equvalent-boxes {
+#side-by-side-boxes {
   display: flex;
   justify-content: space-around;
 }
 
-.equivalent-box {
-  width: 45%;
 
+.side-by-side-box {
+  width: 45%;
+}
+
+.puts-color {
+  color: #8427C0
+}
+
+.print-color {
+  color: #0BD956
 }
 
 #date-heading {
