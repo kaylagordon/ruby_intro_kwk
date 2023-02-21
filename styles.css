@@ -25,6 +25,7 @@ code {
 a {
   text-decoration: none;
   font-weight: bold;
+  color: #4196FA;
 }
 
 .lesson-text {
@@ -187,14 +188,6 @@ ol > li,
 
 #breakdown-unit {
   margin-bottom: 45px;
-}
-
-#breakdown-unit > span {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 18px;
-  border: 6px solid gray;
-  margin: 5px;
-  padding: 5px;
 }
 
 #cited {
